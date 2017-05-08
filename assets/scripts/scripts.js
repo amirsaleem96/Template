@@ -564,38 +564,7 @@ function toggleMenu(){
 		target2[0].style.display = "none";
 	}
 }
-//disable animation after sometime
-if(document.documentElement.clientWidth > 992){
-setTimeout(
-	function disableAnimation(){
-	var target1 = document.getElementsByClassName("preLoaderWrapperLeft");
-	var target2 = document.getElementsByClassName("preLoaderWrapperRight");
-	var c1 = document.getElementsByClassName("thisWrapper");
-	var timer = 0;
-	var id1 = setInterval(innerFunction1,1);
-	var id2 = setInterval(innerFunction2,1);
-	function innerFunction1(){	
-	if(timer == 700){
-		clearInterval(id1);
-	}
-	else{
-	timer += 4;
-	timer++;	
-	target1[0].style.marginLeft = -timer + 'px';
-	c1[0].style.display = "none";
-	}
-	};
-	function innerFunction2(){
-	if(timer == 700){
-		clearInterval(id2);
-	}
-	else{
-	timer++;	
-	target2[0].style.marginRight = -timer + 'px';
-	}
-	}
-},2000);}
-//back to top function
+// back to top function
 function scrollTopBody(){
 	var myBody = document.body;
 	var id = setInterval(secondFunction,1);
