@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+
+<head>
+  <title>Project 001 | Amir Saleem</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width = device-width, initial-scale = 1, maximum-scale = 1" />
+  <link rel="icon" type="icon/png" href="assets/images/favicon.png" />
+  <link rel="stylesheet" type="text/css" href="assets/styles/layout.css" />
+  <link rel="stylesheet" type="text/css" href="assets/styles/styles.css" />
+  <link rel="stylesheet" type="text/css" href="assets/fonts/font-awesome-4.6.3/css/font-awesome.min.css" />
+  <script type="text/javascript" src="assets/scripts/scripts.js"></script>
+</head>
+
+<body onload = "disableAnimation()" onscroll = "toggleMenu()">
+ <!-- Side Menu Bar Starts-->
+  <aside>
+    <div id="headBlock">
+      <span class="closeBtn" onclick="closeMenu()">&times;</span>
+      <i class="fa fa-google-wallet" aria-hidden="true"></i>
+    </div>
+    <div id="firstBlock">
+      <ul>
+        <a href="home.html" style="color: white;">
+          <li>Home</li>
+        </a>
+        <a href="login.html" style="color: white;">
+          <li>Login</li>
+        </a>
+        <a href="signup.html" style="color: white;">
+          <li>Signup</li>
+        </a>
+        <a href="responsive.html" style="color: white;">
+          <li>Responsive</li>
+        </a>
+        <a href="about.html" style="color: white;">
+          <li>About</li>
+        </a>
+        <a href="contact.html" style="color: white;">
+          <li>Contact</li>
+        </a>
+      </ul>
+    </div>
+  </aside>
+  <!-- Side Menu Bar Ends -->
+  <!-- Thank you note -->
+  <div id="leavingWrapper">
+    <span class="closeBtn3" onclick="closeVisit()" title="close">&times;</span>
+    <h1 style="color: white; font-size: 20px; text-align: center; width: 100%;">Thanks for visiting our site, come back soon.</h1>
+  </div>
+  <!-- Thank you note -->
+  <!-- Main Block Starts -->
+  <div id="main">
+    <!-- Header Starts -->
+    <div class="L-tewelve">
+      <div class="row">
+        <header>
+          <span class="menuBtn" onclick="openMenu()"><i class = "fa fa-bars"></i></span>
+          <span class="number" onclick="openVisit()"><i class = "fa fa-plus"></i></span>
+        </header>
+      </div>
+    </div>
+    <!-- Header Ends -->
+    <!-- Fixed Menu Button -->
+    <span class="menuBtn-2" onclick="openMenu()"><i class = "fa fa-bars"></i></span>
+    <div class="backgroundLogin">
+      <div class="L-tewelve">
+        <form class="formWrapper2" method="post" action="" name="logInForm" onsubmit="return loginValidate()">
+          <i class="fa fa-google-wallet" style="color: black; padding: 10px;" aria-hidden="true"></i>
+          <h2 class="cleverSign">SIGN IN TO YOUR CLEVERBIRD ACCOUNT</h2>
+          <div class="contactFormWrapper">
+            <input type="text" placeholder="Enter your email" name="Email" class="contactForm" onkeyup="validateEmailId(this.value)" autocomplete="off" />
+            <br/>
+            <p class="error"></p>
+            <p class="error"></p>
+            <p class="error"></p>
+          </div>
+          <div class="contactFormWrapper">
+            <input type="password" placeholder="Enter your password" name="word" class="contactForm" onkeyup="validPass(this.value)" autocomplete="off" /><span id="text">show</span>
+            <input type="checkbox" id="check" onclick="showPass()" />
+            <br/>
+            <p class="error"></p>
+          </div>
+          <input type="submit" value="SIGN IN" id="submitForm" />
+          <br/>
+          <br/>
+          <p>Not a member ? <a href="signup.html">SIGN UP</a>
+          </p>
+        </form>
+      </div>
+    </div>
+    <div class="L-tewelve">
+      <div class="row">
+        <footer>
+          <p>&copy; Copyright 2016 | Amir Saleem</p>
+        </footer>
+      </div>
+    </div>
+  </div>
+  </div>
+  <!--Modal Box-->
+  <div class="modalWrapper">
+    <div class="modalBox">
+      <span class="closeBtn2" onclick="closeModal()" title="close">&times;</span>
+      <h1 style="text-align: center;" id="title">hi</h1>
+      <h3 style="text-align: center;" id="info">hi</h3>
+    </div>
+  </div>
+  <!-- Modal Ends -->
+  <!-- preloader -->
+   <div class = "preLoaderWrapperLeft">
+     <div class = "thisWrapper">
+      <div class="block"></div>
+	  <div class="block"></div>
+	  <div class="block"></div>
+	  <div class="block"></div>
+	  <div class="block"></div>
+	  <div class="block"></div>
+	  <div class="block"></div>
+	  <div class="block"></div>
+	  <div class="block"></div>
+	  <div class="block"></div>
+	  <div class="block"></div>
+	  <div class="block"></div>
+	  <div class="block"></div>
+	  <div class="block"></div>
+	  <div class="block"></div>
+	  <div class="block"></div>
+     </div>
+    </div>
+   <div class = "preLoaderWrapperRight">
+    
+   </div>
+  
+  <!-- preloader -->
+</body>
+
+</html>

@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+
+<head>
+  <title>Project 001 | Amir Saleem</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width = device-width, initial-scale = 1, maximum-scale = 1" />
+  <link rel="icon" type="icon/png" href="assets/images/favicon.png" />
+  <link rel="stylesheet" type="text/css" href="assets/styles/layout.css" />
+  <link rel="stylesheet" type="text/css" href="assets/styles/styles.css" />
+  <link rel="stylesheet" type="text/css" href="assets/fonts/font-awesome-4.6.3/css/font-awesome.min.css" />
+  <script type="text/javascript" src="assets/scripts/scripts.js"></script>
+  <script type="text/javascript" src="assets/scripts/smooth-scroll.js"></script>
+</head>
+<script>
+ window.onscroll = myScroll;
+ window.onload = myScroll;
+</script>
+<body onload = "disableAnimation()">
+  <!-- Side Menu Bar Starts-->
+  <aside>
+    <div id="headBlock">
+      <span class="closeBtn" onclick="closeMenu()">&times;</span>
+      <i class="fa fa-google-wallet" aria-hidden="true"></i>
+    </div>
+    <div id="firstBlock">
+      <ul>
+        <a href="home.html" style="color: white;">
+          <li>Home</li>
+        </a>
+        <a href="login.html" style="color: white;">
+          <li>Login</li>
+        </a>
+        <a href="signup.html" style="color: white;">
+          <li>Signup</li>
+        </a>
+        <a href="responsive.html" style="color: white;">
+          <li>Responsive</li>
+        </a>
+        <a href="about.html" style="color: white;">
+          <li>About</li>
+        </a>
+        <a href="contact.html" style="color: white;">
+          <li>Contact</li>
+        </a>
+      </ul>
+    </div>
+  </aside>
+  <!-- Side Menu Bar Ends -->
+  <!--Right sidebar-->
+     <div id = "rightBar">
+	    <span style = "color: white; position: absolute; right: 15px; top: 5px; font-size: 20px; cursor: pointer;" onclick = "closeDetails()">&times;</span>
+	    <h1 onclick = "showDetails()">DETAILS</h1>
+		<p class = "writeDetails" title = "Width of Page">Width:</p>
+		<p class = "writeDetails" title = "Height of Page">Height:</p>
+		<p class = "writeDetails">Theme Color:</p>
+		<p class = "writeDetails">Color Depth: </p>
+		<p class = "writeDetails">Pixel Depth: </p>
+		<p class = "writeDetails">Page Protocol: </p>
+		<p class = "writeDetails">Cookies: </p>
+		<p class = "writeDetails">Browser Name: </p>
+		<p class = "writeDetails">Browser Code: </p>
+		<p class = "writeDetails">Browser Engine: </p>
+		<p class = "writeDetails">Browser Platform: </p>
+		<p class = "writeDetails">Browser Language: </p>
+		<p class = "writeDetails">Browser Version: </p>
+	 </div>
+  <!--Right sidebar-->
+  <!-- sticky navigation -->
+     <div class = "navigationWrapper">
+	   <div class = "navLinks" onmouseover = "changeValue1()" onmouseout = "changeValueAgain1()">
+	     <a class = "navValue" data-scroll href = "#servicePage"></a>
+	   </div>
+	   <div class = "navLinks" onmouseover = "changeValue2()" onmouseout = "changeValueAgain2()">
+	     <a class = "navValue" data-scroll href = "#processPage"></a>
+	   </div>
+	   <div class = "navLinks" onmouseover = "changeValue3()" onmouseout = "changeValueAgain3()">
+	     <a class = "navValue" data-scroll href = "#contactPage"></a>
+	   </div>
+	 </div>
+  <!-- sticky navigation -->
+  <!-- Main Block Starts -->
+  <div id="main">
+    <!-- Header Starts -->
+    <div class="L-tewelve"> 
+      <div class="row">
+        <header>
+          <span class="menuBtn" onclick="openMenu()"><i class = "fa fa-bars"></i></span>
+          <span class="number" onclick="openVisit()"><i class = "fa fa-plus"></i></span>
+		  <p class = "detailsShow" title = "Details of website"	onclick = "openDetails()">FOR GEEKS</p>
+        </header>
+      </div>
+    </div>
+    <!-- Header Ends -->
+    <!-- Fixed Menu Button -->
+    <span class="menuBtn-2" onclick="openMenu()"><i class = "fa fa-bars"></i></span>
+    <!-- Banner Starts-->
+    <div class="L-tewelve">
+      <div class="row">
+        <div class="bannerWrapper">
+          <!-- Background Video for larger devices -->
+          <div class="video-hidden">
+            <video autoplay loop>
+              <source src="assets/video/MP4/Productive-Morning.mp4" />
+              <source src="assets/video/OGV/Productive-Morning.ogv" />
+              <source src="assets/video/WEBM/Productive-Morning.webm" />
+            </video>
+          </div>
+          <!-- Background Video Ends -->
+          <!-- Background Image for Smaller Devices -->
+          <div class="image-hidden">
+            <img src="assets/images/banner2.jpg" alt="image" />
+          </div>
+          <!-- Background Image Ends -->
+          <!-- Foreground banner for description -->
+          <div class="banner">
+            <!-- Text Block -->
+            <div class="description">
+              <i class="fa fa-google-wallet" aria-hidden="true"></i>
+              <h1>"CLEVERBIRD <span style = "color: yellow;">CREATIVE"</span></h1>
+              <p>We just don't create websites, we provide solutions</p>
+              <div class="smallBlock" onclick="alert('OOPS!, it looks like our server is not in a good mood today')">
+                <span class="play">Play</span>
+                <div class="oval"><i class="fa fa-play"></i>
+                </div>
+              </div>
+            </div>
+            <!-- Text Block ENds -->
+          </div>
+          <!-- Foreground Ends -->
+        </div>
+        <!--Banner Wrapper ENds-->
+      </div>
+      <!--Row Ends -->
+    </div>
+    <!--Column Ends-->
+    <!-- Banner Ends -->
+    <div class="L-three M-six T-six S-six">
+      <div class="row">
+        <div class="col">
+          <img src="assets/images/img1.jpg" alt="image" />
+          <div class="inner-col">
+            <h1>Daniel Pany</h1>
+            <h2>President</h2>
+            <p>Daniel is a graduate from university of pennysilvania. He started his career as a system analyst in Nvidia, New York.Later he founded one of the biggest company Terabyte.Now he has been appointed as a president in CleverBird.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="L-three M-six T-six S-six">
+      <div class="row">
+        <div class="col">
+          <img src="assets/images/img6.jpg" alt="image" />
+          <div class="inner-col">
+            <h1>Olfmann Doe</h1>
+            <h2>CEO</h2>
+            <p>Doe is a graduate from university of pennysilvania. He started his career as a system analyst in Nvidia, New York.Later he founded one of the biggest company Terabyte.Now he has been appointed as a president in CleverBird.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="L-three M-six T-six S-six">
+      <div class="row">
+        <div class="col">
+          <img src="assets/images/img2.jpg" alt="image" />
+          <div class="inner-col">
+            <h1>James Mclaren</h1>
+            <h2>Product Designer</h2>
+            <p>James is a graduate from university of pennysilvania. He started his career as a system analyst in Nvidia, New York.Later he founded one of the biggest company Terabyte.Now he has been appointed as a president in CleverBird.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="L-three M-six T-six S-six">
+      <div class="row">
+        <div class="col">
+          <img src="assets/images/img4.jpg" alt="image" />
+          <div class="inner-col">
+            <h1>Steven Palmer</h1>
+            <h2>Marketing Head</h2>
+            <p>Steven is a graduate from university of pennysilvania. He started his career as a system analyst in Nvidia, New York.Later he founded one of the biggest company Terabyte.Now he has been appointed as a president in CleverBird.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="divider"></div>
+    <div class="L-tewelve" id = "servicePage">
+      <div class="heading">
+        <h1>Our <span style = "color: #00193e;">Services</span></h1>
+      </div>
+    </div>
+    <div class="L-three M-six T-six S-tewelve">
+      <div class="row">
+        <div class="col2" onmouseover="showBtn1()" onmouseout="closeBtn1()">
+          <i class="fa fa-cog big"></i>
+          <h2>Website Development</h2>
+          <button class="knowMore" onclick="myAlert()">Know More</button>
+          <p>We provide website development solutions. All of our websites are fully responsive. We provide cost effective and affordable website design and development</p>
+        </div>
+      </div>
+    </div>
+    <div class="L-three M-six T-six S-tewelve">
+      <div class="row">
+        <div class="col2" onmouseover="showBtn2()" onmouseout="closeBtn2()">
+          <i class="fa fa-camera big"></i>
+          <h2>Website Re-Design</h2>
+          <button class="knowMore" onclick="myAlert()">Know More</button>
+          <p>We provide website development solutions. All of our websites are fully responsive. We provide cost effective and affordable website design and development</p>
+        </div>
+      </div>
+    </div>
+    <div class="L-three M-six T-six S-tewelve">
+      <div class="row">
+        <div class="col2" onmouseover="showBtn3()" onmouseout="closeBtn3()">
+          <i class="fa fa-clock-o big"></i>
+          <h2>Website Optimization</h2>
+          <button class="knowMore" onclick="myAlert()">Know More</button>
+          <p>We provide website development solutions. All of our websites are fully responsive. We provide cost effective and affordable website design and development</p>
+        </div>
+      </div>
+    </div>
+    <div class="L-three M-six T-six S-tewelve">
+      <div class="row">
+        <div class="col2" onmouseover="showBtn4()" onmouseout="closeBtn4()">
+          <i class="fa fa-desktop big"></i>
+          <h2>Website Maintainance</h2>
+          <button class="knowMore" onclick="myAlert()">Know More</button>
+          <p>We provide website development solutions. All of our websites are fully responsive. We provide cost effective and affordable website design and development</p>
+        </div>
+      </div>
+    </div>
+    <div class="L-tewelve" id = "bazinga">
+      <div class="row">
+        <div class="contentWrapper">
+          <h1>WE <span style = "color: yellow;">LOVE</span> WHAT WE <span style = "color: yellow;">DO</span>.</h1>
+          <div class="L-six M-tewelve T-tewelve S-tewelve">
+            <div class="contentLeft">
+              <h2>DELIVERING THE UNIFIED EXPERIENCE</h2>
+              <p>Take the step beyond Omni-Channel; in the new consumer-shopping era, enterprises need to deliver a unified commerce experience. Wallmob can tie together the newest commerce software with existing systems to form a greater whole, and you can manage it all from your Point of Sale</p>
+              <ul>
+                <li>SEAMLESS CUSTOMER EXPERIENCE</li>
+                <li>CLOUD BASED POINT OF SALE</li>
+                <li>REAL BUSINESS RESULTS</li>
+                <li>TOP NOTCH USER INTERFACE</li>
+                <li>EASIER SECURITY AND MAINTAINANCE</li>
+              </ul>
+            </div>
+          </div>
+          <div class="L-six M-tewelve T-tewelve S-tewelve">
+            <div class="contentRight">
+              <img src="assets/images/process5.png" alt="image" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="L-tewelve" id = "processPage">
+      <div class="row">
+        <div class="processWrapper">
+          <div class="L-tewelve">
+            <div class="heading">
+              <h1>Our <span style = "color: #00193e;">Process</span></h1>
+            </div>
+          </div>
+          <img src="assets/images/process4.png" alt="image" />
+        </div>
+      </div>
+      <div class="processWrapperMobile">
+        <div class="L-tewelve">
+          <div class="heading">
+            <h1>Our <span style = "color: #00193e;">Process</span></h1>
+          </div>
+        </div>
+        <div class="L-six M-six T-six S-tewelve">
+          <div class="processInnerMobile">
+            <h1>01</h1>
+            <img src="assets/images/bulb2.png" alt="image" />
+            <h2>Concept</h2>
+            <p>We will produce creative designs around your choice,and of course, you can always ask for changes any time.</p>
+          </div>
+        </div>
+        <div class="L-six M-six T-six S-tewelve">
+          <div class="processInnerMobile">
+            <h1>02</h1>
+            <img src="assets/images/team2.png" alt="image" />
+            <h2>Meet the Team</h2>
+            <p>We will produce creative designs around your choice,and of course, you can always ask for changes any time.</p>
+          </div>
+        </div>
+        <div class="L-six M-six T-six S-tewelve">
+          <div class="processInnerMobile">
+            <h1>03</h1>
+            <img src="assets/images/front.png" alt="image" />
+            <h2>Fornt-End</h2>
+            <p>We will produce creative designs around your choice,and of course, you can always ask for changes any time.</p>
+          </div>
+        </div>
+        <div class="L-six M-six T-six S-tewelve">
+          <div class="processInnerMobile">
+            <h1>04</h1>
+            <img src="assets/images/develop.png" alt="image" />
+            <h2>Develoment</h2>
+            <p>We will produce creative designs around your choice,and of course, you can always ask for changes any time.</p>
+          </div>
+        </div>
+        <div class="L-six M-six T-six S-tewelve">
+          <div class="processInnerMobile">
+            <h1>05</h1>
+            <img src="assets/images/qt.jpg" alt="image" />
+            <h2>Quality Test</h2>
+            <p>We will produce creative designs around your choice,and of course, you can always ask for changes any time.</p>
+          </div>
+        </div>
+        <div class="L-six M-six T-six S-tewelve">
+          <div class="processInnerMobile">
+            <h1>06</h1>
+            <img src="assets/images/launch.png" alt="image" />
+            <h2>Launch</h2>
+            <p>We will produce creative designs around your choice,and of course, you can always ask for changes any time.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="L-tewelve M-tewelve T-tewelve S-tewelve">
+      <div class="row">
+        <div class="parallax">
+          <h1>THE <span style = "color: yellow;">ONLY THING</span> THAT CAN<span style = "color: yellow;"> ' </span>T BE DONE BY US IS THE THING THAT CAN ONLY BE DONE BY GOD.</h1>
+          <button class="thrill1" onclick="shakeIt()">EXPERIENCE</button>
+          <button class="thrill2" onclick="shakeIt2()">EXPERIENCE</button>
+        </div>
+      </div>
+    </div>
+    <div class="L-tewelve">
+      <div class="heading">
+        <h1>Our <span style = "color: #00193e;">Clients</span></h1>
+      </div>
+    </div>
+    <div class="L-two M-four T-four S-six" onmouseover="a1()" onmouseout="out()">
+      <!-- <div class = "row"> -->
+      <div class="portfolioWrapper">
+        <img src="assets/images/blackberry.jpg" alt="image" />
+        <div class="fore">
+        </div>
+      </div>
+      <!-- </div> -->
+    </div>
+    <div class="L-two M-four T-four S-six" onmouseover="a2()" onmouseout="out()">
+      <!-- <div class = "row"> -->
+      <div class="portfolioWrapper">
+        <img src="assets/images/kathika.jpg" alt="image" />
+        <div class="fore">
+        </div>
+      </div>
+      <!-- </div> -->
+    </div>
+    <div class="L-two M-four T-four S-six" onmouseover="a3()" onmouseout="out()">
+      <!-- <div class = "row"> -->
+      <div class="portfolioWrapper">
+        <img src="assets/images/tnf.jpg" alt="image" />
+        <div class="fore">
+        </div>
+      </div>
+      <!-- </div> -->
+    </div>
+    <div class="L-two M-four T-four S-six" onmouseover="a4()" onmouseout="out()">
+      <!-- <div class = "row"> -->
+      <div class="portfolioWrapper">
+        <img src="assets/images/classic.jpg" alt="image" />
+        <div class="fore">
+        </div>
+      </div>
+      <!-- </div> -->
+    </div>
+    <div class="L-two M-four T-four S-six" onmouseover="a5()" onmouseout="out()">
+      <!-- <div class = "row"> -->
+      <div class="portfolioWrapper">
+        <img src="assets/images/square.jpeg" alt="image" />
+        <div class="fore">
+        </div>
+      </div>
+      <!-- </div> -->
+    </div>
+    <div class="L-two M-four T-four S-six" onmouseover="a6()" onmouseout="out()">
+      <!-- <div class = "row"> -->
+      <div class="portfolioWrapper">
+        <img src="assets/images/mcd.jpeg" alt="image" />
+        <div class="fore">
+        </div>
+      </div>
+      <!-- </div> -->
+    </div>
+    <div class="L-tewelve" id = "contactPage">
+      <div class="heading">
+        <h1>Get in<span style = "color: #00193e;"> Touch</span></h1>
+      </div>
+    </div>
+    <div class="L-tewelve M-tewelve T-tewelve">
+      <!-- <h2>WRITE TO US</h2> -->
+      <form class="formWrapper" name="contactFormClever" method="post" onsubmit="return validate()">
+        <div class="contactFormWrapper">
+          <input type="text" placeholder="First Name" name="Fname" class="contactForm" onkeyup="validateFirstName(this.value)" autocomplete="off" />
+          <br/>
+          <p class="error">
+            <p>
+        </div>
+        <div class="contactFormWrapper">
+          <input type="text" placeholder="Last Name" name="Lname" class="contactForm" onkeyup="validateLastName(this.value)" autocomplete="off" />
+          <br/>
+          <p class="error"></p>
+        </div>
+        <div class="contactFormWrapper">
+          <input type="text" placeholder="Enter Email" name="Email" class="contactForm" onkeyup="validateEmailId(this.value)" autocomplete="off" />
+          <br/>
+          <p class="error"></p>
+        </div>
+        <div class="contactFormWrapper">
+          <textarea name="Comments" placeholder="Write here your comments" rows="5" cols="30" onkeyup="validateComments()" autocomplete="off"></textarea>
+          <p class="error"></p>
+        </div>
+        <input type="submit" value="Proceed" id="submitForm" />
+      </form>
+    </div>
+	<!--
+    <div class="L-six T-tewelve">
+      <div class="formDescription">
+        <h2>FEEL FREE TO CONTACT US</h2>
+        <p style="text-align: left;">For us, our customers are our priority.Whatever we are today is beacuse of our customers.Our main motto in this business is to keep our customers happy.But still if we have done a mistake, or you want to clear your query you can contact us anytime.We will be more than happy to hear your thoughts.Or just follow us on </p>
+        <div class = "followWrapper">
+		<i style = "color: #3b5998;" class = "fa fa-facebook-square"></i>
+		<i style = "color: #00aced;" class = "fa fa-twitter-square"></i>
+		<i style = "color: #0077b5;" class = "fa fa-linkedin-square"></i>
+		<i style = "color: #dd4b39;" class = "fa fa-google-plus-square"></i>
+		<i style = "color: #c92228;" class = "fa fa-pinterest-square"></i>
+		</div>
+      </div>
+    </div>-->
+    <div class="L-tewelve">
+      <div class="row">
+        <div class="inputWrapper">
+          <h1>Sign up for our newsletter.</h1>
+          <input type="text" placeholder = "Enter your email" id="newsInput" autocomplete="off" onfocus="this.value = ''" />
+          <button class="signBtn" onclick="validateEmail()">SIGN UP</button>
+        </div>
+      </div>
+    </div>
+    <div class="L-tewelve">
+      <div class="row">
+        <div class="footerWrapper">
+          <div class="L-three M-tewelve T-tewelve">
+            <h1 class = "text-left">About</h1>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+          </div>
+          <div class="L-three M-tewelve T-tewelve">
+            <h1>Sitemap</h1>
+            <ul>
+              <a href="home.html" style="color: white;">
+                <li>Home</li>
+              </a>
+              <a href="login.html" style="color: white;">
+                <li>Login</li>
+              </a>
+              <a href="signup.html" style="color: white;">
+                <li>Signup</li>
+              </a>
+              <a href="responsive.html" style="color: white;">
+                <li>Responsive</li>
+              </a>
+              <a href="about.html" style="color: white;">
+                <li>About</li>
+              </a>
+              <a href="contact.html" style="color: white;">
+                <li>Contact</li>
+              </a>
+            </ul>
+          </div>
+          <div class="L-three M-tewelve T-tewelve">
+            <h1 class = "text-left">Careers</h1>
+            <p>We are always looking forward to hire fresh and experienced people with great minds and innovative thinking.If you have some skills kindly write to us and we will call you for the interview after review process.</p>
+			<div class = "followWrapper">
+			<i style = "color: #3b5998;" class = "fa fa-facebook"></i>
+			<i style = "color: #00aced;" class = "fa fa-twitter"></i>
+			<i style = "color: #0077b5;" class = "fa fa-linkedin"></i>
+			<i style = "color: #dd4b39;" class = "fa fa-google-plus"></i>
+			<i style = "color: #c92228;" class = "fa fa-pinterest"></i>
+			</div>
+          </div>
+          <div class="L-three M-tewelve T-tewelve">
+            <h1 class = "text-left">The Office</h1>
+            <p class="cName">CLEVERBIRD <span style="color: ;">CREATIVE</span>
+            </p>
+            <p class="cAddress"><i class="fa fa-map" style="margin-right: 10px;"></i>A-27 DDA Colony West Gorakh Park, Delhi</p>
+            <p class="cPhone"><i class="fa fa-phone-square" style="margin-right: 10px;"></i>011-98763578</p>
+            <p class="cEmail"><i class="fa fa-envelope" style="margin-right: 10px;"></i>contact@cleverbird.com</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="L-tewelve">
+      <div class="row">
+        <footer>
+          <p>&copy; Copyright 2016 | Amir Saleem</p>
+        </footer>
+      </div>
+    </div>
+  </div>
+  <!--Main Ends-->
+  <!--Modal Box-->
+  <div class="modalWrapper">
+    <div class="modalBox">
+      <span class="closeBtn2" onclick="closeModal()" title="close">&times;</span>
+      <h1 style="text-align: center;" id="title">hi</h1>
+      <h3 style="text-align: center;" id="info">hi</h3>
+    </div>
+  </div>
+  <!-- Modal Ends -->
+  <!-- Thank you note -->
+  <div id="leavingWrapper">
+    <span class="closeBtn3" onclick="closeVisit()" title="close">&times;</span>
+    <h1 style="color: white; font-size: 20px; text-align: center; width: 100%;">Thanks for visiting our site, come back soon.</h1>
+  </div>
+  <!-- Thank you note -->
+  <!-- back to top -->
+    <span class = "backToTop" onclick = "scrollTopBody()"><i class = "fa fa-arrow-up"></i></span>
+  <!-- Back to top -->
+<!-- preloader -->
+   <div class = "preLoaderWrapperLeft">
+     <div class = "thisWrapper">
+      <div class="block"></div>
+	  <div class="block"></div>
+	  <div class="block"></div>
+	  <div class="block"></div>
+	  <div class="block"></div>
+	  <div class="block"></div>
+	  <div class="block"></div>
+	  <div class="block"></div>
+	  <div class="block"></div>
+	  <div class="block"></div>
+	  <div class="block"></div>
+	  <div class="block"></div>
+	  <div class="block"></div>
+	  <div class="block"></div>
+	  <div class="block"></div>
+	  <div class="block"></div>
+     </div>
+    </div>
+   <div class = "preLoaderWrapperRight">
+    
+   </div>
+   <script>
+    smoothScroll.init();
+</script>
+  <!-- preloader -->
+</body>
+
+</html>
